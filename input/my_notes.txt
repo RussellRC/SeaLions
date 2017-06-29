@@ -1,0 +1,73 @@
+* Some images like 47.jpg have blacked out regions with sea lions 
+
+
+
+Full dataset tensor for 'adult_males': (5326, 32, 32, 3)
+Mean: 163.09
+Standard deviation: 56.4924
+Full dataset tensor for 'subadult_males': (4016, 32, 32, 3)
+Mean: 154.688
+Standard deviation: 59.6803
+Full dataset tensor for 'adult_females': (35730, 32, 32, 3)
+Mean: 138.303
+Standard deviation: 52.3065
+Full dataset tensor for 'juveniles': (18977, 32, 32, 3)
+Mean: 132.976
+Standard deviation: 53.2845
+Full dataset tensor for 'pups': (16104, 32, 32, 3)
+Mean: 116.048
+Standard deviation: 42.5537
+Full dataset tensor for 'unknown': (6803, 32, 32, 3)
+Mean: 82.0941
+Standard deviation: 52.3619
+
+
+
+adult_males: total=5326 | train=4791 | test=535
+juveniles: total=18977 | train=14462 | test=1642
+unknown: total=6803 | train=3607 | test=409
+pups: total=16104 | train=32192 | test=3538
+adult_females: total=35730 | train=6150 | test=653
+subadult_males: total=4016 | train=17058 | test=1919
+
+
+
+
+VGG16 - SQUEEZE - TRAINING - 244 IMAGE SIZE
+
+  image:  Tensor("DecodeJpeg:0", shape=(?, ?, 3), dtype=uint8)
+  processed_image:  Tensor("concat:0", shape=(224, 224, 3), dtype=float32)
+  input_image:  Tensor("ExpandDims_1:0", shape=(1, 224, 224, 3), dtype=float32)
+  conv1.shape:  [1, 224, 224, 64]
+  pool1.shape:  [1, 112, 112, 64]
+  conv2.shape:  [1, 112, 112, 128]
+  pool2.shape:  [1, 56, 56, 128]
+  conv3.shape:  [1, 56, 56, 256]
+  pool3.shape:  [1, 28, 28, 256]
+  conv4.shape:  [1, 28, 28, 512]
+  pool4.shape:  [1, 14, 14, 512]
+  conv5.shape:  [1, 14, 14, 512]
+  pool5.shape:  [1, 7, 7, 512]
+  fc6.shape:  [1, 1, 1, 4096]
+  dropout6.shape:  [1, 1, 1, 4096]
+  fc7.shape:  [1, 1, 1, 4096]
+  dropout7.shape:  [1, 1, 1, 4096]
+  fc8.shape:  [1, 1, 1, 1000]
+  fc8/squeezed:  [1, 1000]
+  logits:  Tensor("vgg_16/fc8/squeezed:0", shape=(1, 1000), dtype=float32)
+
+
+VGG16 - SQUEEZE - TRAINING - 32 IMAGE SIZE
+
+  (32, 32, 3)
+  input.shape:  [1, 32, 32, 3]
+  conv1.shape:  [1, 32, 32, 64]
+  pool1.shape:  [1, 16, 16, 64]
+  conv2.shape:  [1, 16, 16, 128]
+  pool2.shape:  [1, 8, 8, 128]
+  fc3.shape:  [1, 1, 1, 1024]
+  dropout3.shape:  [1, 1, 1, 1024]
+  fc4.shape:  [1, 1, 1, 1024]
+  dropout4.shape:  [1, 1, 1, 1024]
+  fc5.shape:  [1, 1, 1, 6]
+  squeezed.shape:  [1, 6]
