@@ -1,6 +1,0 @@
-input/Train/
-input/TrainDotted/
-input/Test/
-input/crops*
-*.pickle
-model/

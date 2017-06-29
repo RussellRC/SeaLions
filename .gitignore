@@ -1,4 +1,15 @@
+#####
+# PROJECT FILES
+#####
 
+input/Train/
+input/TrainDotted/
+input/Test/
+input/crops**
+*.pickle
+model/
+
+#########################
 
 # Mac OS
 .DS_Store
@@ -63,5 +74,41 @@ docs/_build/
 # PyBuilder
 target/
 
-#Ipython Notebook
+# Ipython Notebook
 .ipynb_checkpoints
+
+#####
+# Eclipse
+#####
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+.pydevproject
+*.pydevproject
+
+# Java annotation processor (APT)
+.factorypath
+
+# sbteclipse plugin
+.target
+
+# Code Recommenders
+.recommenders/
+
+#########################
